@@ -22,7 +22,8 @@ const resolvers = {
 
 app.register(mercurius, {
   schema,
-  resolvers
+  resolvers,
+  federationMetadata: true
 })
 
 app.get('/', async function (req, reply) {
