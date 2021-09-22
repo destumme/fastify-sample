@@ -22,12 +22,16 @@ const resolvers = {
 
 app.register(mercurius, {
   schema,
-  resolvers,
-  federationMetadata: true
+  resolvers
 })
 
 app.get('/', async function (req, reply) {
-  const query = '{ books }'
+  const query = `{
+    books{
+      title
+      author
+    }
+  }`
   return reply.graphql(query)
 })
 
