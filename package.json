@@ -1,0 +1,13 @@
+{
+  "name": "fastify-sample",
+  "version": "1.0.0",
+  "description": "Simple fastify api for demonstrating bugs & patterns",
+  "main": "server.js",
+  "author": "Daniel Stumme <destumme@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.21.3",
+    "graphql": "^15.6.0",
+    "mercurius": "^8.3.0"
+  }
+}
